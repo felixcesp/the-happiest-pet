@@ -1,0 +1,102 @@
+/* Fuente de letra  */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+/* variables colores  */
+:root{
+    --principal:#dde5b6;
+    --secundario:#6c584c;
+    --textoPrincipal:#4CAF50;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: white;
+    font-family: "Roboto", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+    height: auto;
+    padding: 48px;
+    width: 100%;
+}
+h2{
+    color: var(--textoPrincipal);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* barra de navegacion */
+
+.contenedorNav{
+    width: 95%;
+    margin: 0 auto;
+    font-family: "Roboto", sans-serif;
+}
+.contenedorNav a{
+    font-size: 22px;
+    text-decoration: none;
+    display: inline-flex;
+    margin: 9px 15px;
+    color: var(--textoPrincipal);
+}
+.contenedorNav p{
+    margin-bottom: 1px;
+    float: right;
+}
+
+.cabeza{
+    color: white;
+    display: flex;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background-color: #95a4a566;
+    padding: 5px;
+}
+/* banner */
+
+.banerPrincipal img{
+    width:100%;
+    margin-top: 3.8rem;
+    margin-bottom: 50px;
+}
+
+
+/*  tarjetas  */
+
+.servicios {
+    width: 75%;
+    margin: 18px auto 70px;
+    display: grid;
+    grid-auto-columns: minmax(7rem, auto);
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+    justify-content: space-around;
+    gap: 1rem;
+}
+.card_body a{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    text-decoration: none;
+    color: var(--textoPrincipal);
+    padding-bottom: 15px;
+}
+.card{
+    background: #f7f4f4;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #00000033, 0 5px 5px 0 #0000003d;
+}
+.imgTarjeta{
+    margin: 15px auto;
+    width: 90%;
+    border-radius: 9px;
+    height: auto;
+    box-shadow: 0 0 20px 0 #46454523, 0 5px 5px 0 #46454523;
+}

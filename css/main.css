@@ -1,0 +1,81 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*Definicion de variables */
+/*Para los subtitulos--trabajamos con h3*/
+
+:root {
+    --ColorFondoPrimaria: white;
+    --BackgroundHeader: #e8dcdc;
+    --FontH1: black;
+    --FontFamilyH1: 15px;
+    /*Color del fondo del nava*/
+    --backgroundNav: #B4789D;
+    /*Tipo de letra del menu */
+    --FonFamilyMenu: Arial;
+    /*Color de letra de los menus*/
+    --colorFontMenu: black;
+    /*Tamaño de letra de los menus*/
+    --fontSizeMenus: 18px;
+    /*Variables de la seccion principal, donde estan parrados, imagenes */
+    --BackGroundSeccionPrincipal: #eaddd0;
+    /*Color de letra para el h3 que son subtitulos de la seccion principal, Donde estan parrafos*/
+    --fontColorPrinciplaH3: black;
+    --fontFamilyH3: Arial;
+    --FontSizeH3: 15px
+    /*Variables para el manejo de parrafos */
+    --fontFamiliParrafo: Arial, Verdana;
+    --fontSizeParrafo: 12px;
+    /*Parametros para el fondo de mascotas para adoptar */
+    --backgroundAdoptar: white;
+    /*Color de fondo del aside */
+    --backgroupdAside: #eaddd0;
+    --fontSizeAside: 20px;
+    /*Variables de los parametros del footer */
+    --backgroundFooter: #B4789D;
+    /*Variables para los enlaces */
+}
+
+header {
+    width: auto;
+    height: 50px;
+    background: var(--BackgroundHeader);
+}
+
+header h1 {
+    color: var(--FontH1);
+    font-family: var(--FontFamilyH1);
+}
+
+nav {
+    width: auto;
+    height: 90px;
+    background: var(--backgroundNav);
+}
+
+#seccion-principal {
+    width: auto;
+    height: 300px;
+    background: var(--BackGroundSeccionPrincipal);
+}
+
+#mascotas-para-adoptar {
+    width: auto;
+    min-height: 50px;
+    background: var(--backgroundAdoptar);
+}
+
+aside {
+    width: auto;
+    height: 50px;
+    background: var(--backgroupdAside);
+}
+
+footer {
+    width: auto;
+    height: 130px;
+    background: var(--backgroundFooter);
+}
