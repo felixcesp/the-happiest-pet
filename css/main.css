@@ -1,8 +1,13 @@
+/*@import"./login.css";
+@import"./registro.css";
+@import"./servicios.css";*/
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+
 
 /*Definicion de variables */
 /*Para los subtitulos--trabajamos con h3*/
@@ -39,28 +44,110 @@
     /*Variables para los enlaces */
 }
 
-header {
-    width: auto;
+/*====================navbar nuevo felix==================================*/
+.menu{
+    background-color: var(--backgroundNav);
+    font-family: var(--FonFamilyMenu);
+   
+}
+#editmenu{
+    color: antiquewhite;
+    background-color: inherit;
+}
+#editmenu:hover{
+    background-color: white;
+    color: black;
+}
+.menu ul li a{
+    color: black;
+    font-family:var(--FonFamilyMenu) ;
+    font-size: 15px;
+}
+.menu ul li a:hover{
+    background-color: var(--backgroundNav);
+    color: aliceblue;
+}
+#regis{
+    position: absolute;
+    color: antiquewhite;
+    background-color: transparent;
     height: 50px;
-    background: var(--BackgroundHeader);
+    font-size: 16px;
+    right: 20px;
+    border: none;
+}
+#regis a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--FonFamilyMenu);
+}
+#regis1 a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--FonFamilyMenu);
+    background-color:transparent;
+}
+#regis1{
+    position: absolute;
+    color: antiquewhite;
+    background-color: transparent;
+    height: 50px;
+    font-size: 16px;
+    right: 110px;
+    border: none;
+
 }
 
-header h1 {
-    color: var(--FontH1);
-    font-family: var(--FontFamilyH1);
-}
-
-nav {
-    width: auto;
-    height: 90px;
-    background: var(--backgroundNav);
-}
-
+/*  ================donde esta bootstrap nuevo felix==========================*/
 #seccion-principal {
     width: auto;
     height: 300px;
-    background: var(--BackGroundSeccionPrincipal);
 }
+/*==============borde y tamaño bootstrap======================*/
+#boostrapcarrusel{
+     border-top:inset 2px black;
+     height: 438px;
+}
+
+  /* ==============CONTENEDOR DE LAS TARGETAS nuevo felix================================================*/
+
+  #todasjargetas{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    height: auto;
+  
+
+}
+.card{
+    height: 60%;
+    width: 23%;
+    margin: auto;
+    
+    border-radius: 50%;
+ 
+    border: none !important; 
+}
+.cardtitle{
+    color: rgb(29, 26, 219);
+    font-family: 'Zilla Slab', serif;
+    font-weight: lighter;
+    font-size: 26px;
+}
+.cardtext{
+    color: rgb(29, 26, 219);
+    font-family: 'Zilla Slab', serif;
+    font-weight: lighter;
+    font-size: 20px;
+}
+/*=========================fin contenedor de targetas======================== */
+/*=========================HEADER FELIX NUEVO======================== */
+.banerPrincipal img{
+
+    height: auto;
+    width: 100%;
+}
+
 
 #mascotas-para-adoptar {
     width: auto;
@@ -74,16 +161,11 @@ aside {
     background: var(--backgroupdAside);
 }
 
-/*footer {
-    width: auto;
-    height: 500px;
-    background: var(--backgroundFooter);
-    background-color: red;
-}*/
 
 
 
-/*====================PARA TRABAJAR EN GRUPO===============================*/
+
+/*====================TRABAJADO EN GRUPO===============================*/
 
 
 /* footer bootstrap*/

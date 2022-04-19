@@ -1,0 +1,192 @@
+/*====================navbar nuevo felix==================================*/
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+/*Definicion de variables */
+/*Para los subtitulos--trabajamos con h3*/
+
+:root {
+    --ColorFondoPrimaria: white;
+    --BackgroundHeader: #e8dcdc;
+    --FontH1: black;
+    --FontFamilyH1: 15px;
+    /*Color del fondo del nava*/
+    --backgroundNav: #B4789D;
+    /*Tipo de letra del menu */
+    --FonFamilyMenu: Arial;
+    /*Color de letra de los menus*/
+    --colorFontMenu: black;
+    /*Tamaño de letra de los menus*/
+    --fontSizeMenus: 18px;
+    /*Variables de la seccion principal, donde estan parrados, imagenes */
+    --BackGroundSeccionPrincipal: #eaddd0;
+    /*Color de letra para el h3 que son subtitulos de la seccion principal, Donde estan parrafos*/
+    --fontColorPrinciplaH3: black;
+    --fontFamilyH3: Arial;
+    --FontSizeH3: 15px
+    /*Variables para el manejo de parrafos */
+    --fontFamiliParrafo: Arial, Verdana;
+    --fontSizeParrafo: 12px;
+    /*Parametros para el fondo de mascotas para adoptar */
+    --backgroundAdoptar: white;
+    /*Color de fondo del aside */
+    --backgroupdAside: #eaddd0;
+    --fontSizeAside: 20px;
+    /*Variables de los parametros del footer */
+    --backgroundFooter: #B4789D;
+    /*Variables para los enlaces */
+}
+
+.menu{
+    background-color: var(--backgroundNav);
+    font-family: var(--FonFamilyMenu);
+   
+}
+#editmenu{
+    color: antiquewhite;
+    background-color: inherit;
+    font-size: 18px;
+}
+#editmenu:hover{
+    background-color: white;
+    color: black;
+}
+
+/*=========================HEADER FELIX NUEVO======================== */
+.banerPrincipal img{
+    height: auto;
+    width: 100%;
+}
+.enunciado{
+    text-align: center;
+    background-color: var(--backgroundNav);
+    height: 80px;
+
+}
+.enunciado1{
+    font-size: 60px;
+    text-align: center;
+    color: white;
+}
+
+
+
+/*==========================MAIN TARGETAS===============================================*/
+/*=========contenedor de tragetas==============*/
+
+.main{
+    padding: 0%;
+    margin: 0%;
+
+}
+
+.cardsin{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-gap: 80px;
+    background-color: var(--BackGroundSeccionPrincipal);
+    height: auto;
+    width: 100%;
+    padding: 80px 80px 80px 180px;
+    
+    
+}
+.products1{
+    background-color: inherit;
+    height: 250px;
+    width: 200px;
+    border: inset 2px #B4789D;
+    border-radius: 5px;
+    box-shadow: 0px 5px 28px -4px #000000;
+}
+/*=============================IMAGENES Y titulos===================================*/
+
+.productimg{
+    width: 100%;
+    border-radius: 25% 0% 0% 0%;
+  
+}
+.titleimg{
+    color: rgb(255, 255, 255);
+    font-family: var(--FontFamilyH1);
+    
+}
+.fontsimg{
+    font-family: var(--FontFamilyH1);
+    font-weight: lighter;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 25px;
+    color: black;
+}
+.fontsimg1{
+    font-family: var(--FontFamilyH1);
+    font-weight: lighter;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 65px;
+    color: black;
+}
+.fontsimg2{
+    font-family: var(--FontFamilyH1);
+    font-weight: lighter;
+    font-size: 10px;
+    margin-left: 10px;
+    margin-top: 50px;
+    color: black;
+}
+
+/* =================EFECTOS EN LAS IMAGENES======================*/
+/*===============primera fila==================================*/
+.products1:hover{
+-webkit-transform:scale(1.5);
+transform:scale(1.5); 
+transition: 1s;
+}
+.products1 {
+overflow:hidden;
+}
+
+
+/*====================TRABAJADO EN GRUPO===============================*/
+
+
+/* footer bootstrap*/
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    background: #d6dee0;
+    padding: 10px 0;
+    border: outset 0.1px white;
+    z-index: -1;
+  }
+  .footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    transition: all .5s ease;
+  }
+  .footer a:first-child {
+    border-left: 1px solid #70726F;
+  }
+  .footer a:hover {
+    color: white;
+    background-color: rgba(30, 13, 159, 0.335);
+  }
+  .right{
+      margin-left: 10px;
+      margin-top: 10px;
+
+  }
+  
+
+
