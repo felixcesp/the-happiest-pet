@@ -1,7 +1,7 @@
 
 /*    formulario  registro    */
 
-.formRegistro{
+.formularioRegistro{
     position: relative;
     background-color: white;
     width: 365px;
@@ -10,8 +10,7 @@
     padding: 45px;
     padding-bottom: 30px;
 }
-.formRegistro input{
-
+.formularioRegistro input{
     font-family: "Roboto", sans-serif;
     outline: 0;
     background: #f2f2f2;
@@ -23,7 +22,36 @@
     font-size: 14px;
     z-index: 2;
 }
-.botonRegistro{
+/* validaciones formulario registro */
+.formularioControl.ok input {
+    border-radius: 5px;
+    border: 0.1px solid;
+    border-color: #4CAF50;
+}
+.formularioControl.falla input {
+    border-radius: 5px;
+    border: 0.1px solid;
+    border-color: #fe5f55;
+}
+.formularioControl p{
+    visibility: hidden;
+    position: relative;
+    top: -15px;
+    font-size: small;
+    font-weight: 500;
+
+}
+
+.formularioControl.falla p{
+    visibility: visible;
+    color:#e74c3c; 
+    position: relative;
+    text-align: right;
+}
+
+/* ................................................. */
+
+.formularioRegistro button{
     display: flex;
     margin: 0 auto;
     justify-content: center;
@@ -36,7 +64,7 @@
     width: 100%;
     font-size: 14px;
 }
-.botonRegistro:hover{
+.formularioRegistro button:hover{
     background: #43A047;
 }
 p{
