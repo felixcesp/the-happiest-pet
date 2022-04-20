@@ -1,0 +1,147 @@
+/* ......cuerpo login.......  */
+
+.tituloRegistro {
+    text-align: center;
+    color: var(--backgroundNav);
+    margin-bottom: 35px;
+}
+
+.formRegistro {
+    background-color: white;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 #00000033, 0 5px 5px 0 #0000003d;
+    padding: 2.5rem 0;
+    animation: form-appear 1s ease;
+}
+
+.formRegistro input {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding: 0.9em 0.5em;
+    background: #f2f2f2;
+    border: 0;
+    width: 75%;
+    color: var(--secundario);
+    font-size: 13px;
+}
+
+.botonRegistro {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    border: 0;
+    background: var(--backgroundNav);
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 15px;
+    font: var(--FonFamilyMenu);
+    width: 75%;
+    font-size: 14px;
+}
+
+.botonRegistro:hover {
+    background: #b691a8;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.message {
+    margin: 15px 0 0;
+    color: var(--secundario);
+    font-size: 12px;
+}
+
+.message a {
+    color: var(--backgroundNav);
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.message a:hover {
+    text-decoration: none;
+    color: #b9147a;
+}
+
+/* ......Footer........... */
+
+.footerLogin {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* ............responsive formulario.......... */
+@media (max-width:320px) {
+    .formRegistro {
+        width: 100%;
+    }
+}
+@media (min-width:480px) {
+    .formRegistro {
+        width: 65%;
+    }
+}
+@media (min-width:575px) {
+    .formRegistro {
+        width: 55%;
+    }
+}
+@media (min-width:640px) {
+    .formRegistro {
+        width: 50%;
+    }
+}
+@media (min-width:767px) {
+    .formRegistro {
+        width: 40%;
+    }
+}
+@media (min-width:991px) {
+    .formRegistro {
+        width: 30%;
+    }
+}
+/* ..............animacion formulario........... */
+
+.formRegistro>* {
+    opacity: 0;
+    animation: slideX 1s ease;
+    animation-delay: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes form-appear {
+    0% {
+        transform: scale(0) translateY(100px);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.05) translateY(-15px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideX {
+    0% {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
