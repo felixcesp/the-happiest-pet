@@ -1,6 +1,5 @@
-/*@import"./login.css";
-@import"./registro.css";
-@import"./servicios.css";*/
+@import"../css/login_registro.css";
+@import"./servicios.css";
 
 * {
     margin: 0px;
@@ -48,7 +47,6 @@
 .menu{
     background-color: var(--backgroundNav);
     font-family: var(--FonFamilyMenu);
-   
 }
 #editmenu{
     color: antiquewhite;
