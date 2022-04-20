@@ -1,4 +1,5 @@
-/*====================navbar nuevo felix==================================*/
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Lobster&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&family=Secular+One&family=Zilla+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Lobster&family=Open+Sans:wght@300&family=Secular+One&display=swap');
 * {
     margin: 0px;
     padding: 0px;
@@ -40,7 +41,8 @@
     --backgroundFooter: #B4789D;
     /*Variables para los enlaces */
 }
-/*=======================NAVBAR==============*/
+
+/*====================navbar nuevo felix==================================*/
 .menu{
     background-color: var(--backgroundNav);
     font-family: var(--FonFamilyMenu);
@@ -49,13 +51,20 @@
 #editmenu{
     color: antiquewhite;
     background-color: inherit;
-    font-size: 18px;
 }
 #editmenu:hover{
     background-color: white;
     color: black;
 }
-/*==========CAMBIOS NUEVOS NAVBAR===================*/
+.menu ul li a{
+    color: black;
+    font-family:var(--FonFamilyMenu) ;
+    font-size: 15px;
+}
+.menu ul li a:hover{
+    background-color: var(--backgroundNav);
+    color: aliceblue;
+}
 #regis{
     position: absolute;
     color: antiquewhite;
@@ -86,7 +95,6 @@
     border: none;
 
 }
-
 /*=========================HEADER FELIX NUEVO======================== */
 .banerPrincipal img{
     height: auto;
@@ -99,89 +107,70 @@
 
 }
 .enunciado1{
-    font-size: 40px;
+    font-size: 60px;
     text-align: center;
     color: white;
-    padding-top: 14PX;
 }
 
+/*==TRABAJAR LO QUE TENEMOS QUE HACER SOLO EN EL MAIN======*/
 
-
-/*==========================MAIN TARGETAS===============================================*/
-/*=========contenedor de tragetas==============*/
-
-.main{
-    padding: 0%;
-    margin: 0%;
-
-}
-
-.cardsin{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 80px;
-    background-color: var(--BackGroundSeccionPrincipal);
-    height: auto;
-    width: 100%;
-    padding: 80px 80px 80px 180px;
-    
-    
-}
-.products1{
-    background-color: white;
-    height: 250px;
-    width: 200px;
-    border: inset 2px #B4789D;
-    border-radius: 5px;
-    box-shadow: 0px 5px 28px -4px #000000;
-}
-/*=============================IMAGENES Y titulos===================================*/
-
-.productimg{
-    width: 100%;
-    border-radius: 0% 0% 0% 0%;
+/*========CONTENEDOR MAIN ACORDEON DERECHA   E IMAGEN  IZQUIERDA======*/
   
+.other{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    overflow: hidden;
+    background-color: var(--BackgroundHeader)
+
 }
-.titleimg{
-    color: rgb(255, 255, 255);
-    font-family: var(--FontFamilyH1);
-    
-}
-.fontsimg{
-    font-family: var(--FontFamilyH1);
-    font-weight: lighter;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: black;
-}
-.fontsimg1{
-    font-family: var(--FontFamilyH1);
-    font-weight: lighter;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 35px;
-    color: black;
-}
-.fontsimg2{
-    font-family: var(--FontFamilyH1);
-    font-weight: lighter;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 40px;
-    color: black;
+/*============CONTENEDOR DEL LADO DERECHO ESTRELLA Y NOMBRE EMPRESA===*/
+.lado{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: transparent;
+    margin: auto;
 }
 
-/* =================EFECTOS EN LAS IMAGENES======================*/
-/*===============primera fila==================================*/
-.products1:hover{
--webkit-transform:scale(1.5);
-transform:scale(1.5); 
-transition: 1s;
+
+/*==================tamaño estrella y ubicacion============*/
+.estrella{
+    height: 80px;
+    width: 80px;
+    margin: auto;
 }
-.products1 {
-overflow:hidden;
+
+/*==estilos nombre empresa y ubicacion================*/
+.name{
+    font-family: var(--FontFamilyH1);
+    margin: auto;
+    font-size: 35px;
+}
+/*==============CONTENEDOR LADO DERECHO ACORDEON BOOTSTRAP=======*/
+.acordeon{
+    width: 70%;
+    margin: auto;
+    
+}
+
+
+/*============FIN DEL MAIN======================*/
+/*=====LETRA DEL BOOTSTRAP TITULOS ACORDEON Y LETRA DEL SUBMENU=====*/
+.letraboot{
+    font-size: 18px;
+}
+strong{
+    font-size: 15PX;
+}
+ul{
+    font-size: 12PX;  
+}
+.fontin{
+    font-size: 12px;
+}
+#accordionFlushExample{
+    
 }
 
 
@@ -219,6 +208,8 @@ overflow:hidden;
       margin-top: 10px;
 
   }
+  
+
   
 
 
