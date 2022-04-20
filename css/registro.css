@@ -1,9 +1,7 @@
-/* Fuente de letra  */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 /* ventana modal */
-
-.modal-content{ /* modificamos el color de fondo de la ventana */
+/* modificamos el color de fondo de la ventana */
+/* .modal-content{ 
     background: #ffffff00;
     border: 0;
     z-index: 0;
@@ -15,7 +13,7 @@
 .btn-close{
     background-color: #fffffffd;
     z-index: 0;
-}
+} */
 
 /* formulario  */
 .formRegistro{
