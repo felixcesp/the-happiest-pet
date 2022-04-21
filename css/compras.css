@@ -1,11 +1,11 @@
-/*====================navbar nuevo felix==================================*/
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/*====FIN CONFIGURACION TOTAL DE LA PAGINA===============*/
 
-
+/*==================VARIABLES CREADAS POR MARIA=============*/
 /*Definicion de variables */
 /*Para los subtitulos--trabajamos con h3*/
 
@@ -40,7 +40,9 @@
     --backgroundFooter: #B4789D;
     /*Variables para los enlaces */
 }
-/*=======================NAVBAR==============*/
+/*==================FIN VARIABLES CREADAS POR MARIA=============*/
+
+/*====================NAVBAR GRUPO==================================*/
 .menu{
     background-color: var(--backgroundNav);
     font-family: var(--FonFamilyMenu);
@@ -49,13 +51,20 @@
 #editmenu{
     color: antiquewhite;
     background-color: inherit;
-    font-size: 18px;
 }
 #editmenu:hover{
     background-color: white;
     color: black;
 }
-/*==========CAMBIOS NUEVOS NAVBAR===================*/
+.menu ul li a{
+    color: black;
+    font-family:var(--FonFamilyMenu) ;
+    font-size: 15px;
+}
+.menu ul li a:hover{
+    background-color: var(--backgroundNav);
+    color: aliceblue;
+}
 #regis{
     position: absolute;
     color: antiquewhite;
@@ -86,8 +95,10 @@
     border: none;
 
 }
+/*========================FIN DEL NAVBAR======================*/
 
-/*=========================HEADER FELIX NUEVO======================== */
+
+/*=========================HEADER GRUPO======================== */
 .banerPrincipal img{
     height: auto;
     width: 100%;
@@ -98,94 +109,70 @@
     height: 80px;
 
 }
+
+/*=========================FIN DEL HEADER============================*/
+
+/*==TRABAJAR LO QUE TENEMOS QUE HACER SOLO EN EL MAIN======*/
+  /*======formulario de internet======*/
+.credit-card-div  span { padding-top:10px; }
+.credit-card-div img { padding-top:30px; }
+.credit-card-div .small-font { font-size:9px; }
+.credit-card-div .pad-adjust { padding-top:10px; }
+/*=======formulario mis estilo=====*/
+#card{
+    height: 100px;
+}
+.mistyle{
+    display: flex;
+    flex-direction: column;
+    height: 293px;
+    margin-top: 0px;
+    
+}
+#cardfont span{
+    font-size: 16px;
+}
+#cardfont input{
+    font-size: 16px;
+}
+/*==========TITULO==========*/
 .enunciado1{
-    font-size: 40px;
+    text-align: center;
+    background-color: var(--backgroundNav);
+    height: 50px;
+
+}
+.enunciado10{
+    font-size: 33px;
     text-align: center;
     color: white;
-    padding-top: 14PX;
+    padding-top: 3px;
+   
+}
+#pago{
+    background-color: var(--backgroundNav) ;
+    color: white;
+    width: 500px;
+}
+#cancelar{
+    background-color: rgb(225, 106, 106);
+   
 }
 
 
 
-/*==========================MAIN TARGETAS===============================================*/
-/*=========contenedor de tragetas==============*/
-
-.main{
-    padding: 0%;
-    margin: 0%;
-
-}
-
-.cardsin{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(3,1fr);
-    grid-gap: 80px;
-    background-color: var(--BackGroundSeccionPrincipal);
-    height: auto;
-    width: 100%;
-    padding: 80px 80px 80px 180px;
-    
-    
-}
-.products1{
-    background-color: white;
-    height: 250px;
-    width: 200px;
-    border: inset 2px #B4789D;
-    border-radius: 5px;
-    box-shadow: 0px 5px 28px -4px #000000;
-}
-/*=============================IMAGENES Y titulos===================================*/
-
-.productimg{
-    width: 100%;
-    border-radius: 0% 0% 0% 0%;
-  
-}
-.titleimg{
-    color: rgb(255, 255, 255);
-    font-family: var(--FontFamilyH1);
-    
-}
-.fontsimg{
-    font-family: var(--FontFamilyH1);
-    font-weight: lighter;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: black;
-}
-.fontsimg1{
-    font-family: var(--FontFamilyH1);
-    font-weight: lighter;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 35px;
-    color: black;
-}
-.fontsimg2{
-    font-family: var(--FontFamilyH1);
-    font-weight: lighter;
-    font-size: 15px;
-    margin-left: 10px;
-    margin-top: 40px;
-    color: black;
-}
-
-/* =================EFECTOS EN LAS IMAGENES======================*/
-/*===============primera fila==================================*/
-.products1:hover{
--webkit-transform:scale(1.5);
-transform:scale(1.5); 
-transition: 1s;
-}
-.products1 {
-overflow:hidden;
-}
 
 
-/*====================TRABAJADO EN GRUPO===============================*/
+/*============FIN DEL MAIN======================*/
+
+
+
+
+
+
+
+
+/*====================TRABAJADO EN GRUPO FOOTER===============================*/
 
 
 /* footer bootstrap*/
@@ -219,6 +206,5 @@ overflow:hidden;
       margin-top: 10px;
 
   }
-  
 
 

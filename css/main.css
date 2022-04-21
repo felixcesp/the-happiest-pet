@@ -132,11 +132,21 @@
     font-weight: lighter;
     font-size: 26px;
 }
+.cardtitle a{
+    text-decoration: none;
+
+}
 .cardtext{
     color: rgb(29, 26, 219);
     font-family: 'Zilla Slab', serif;
     font-weight: lighter;
     font-size: 20px;
+}
+.cardbody2{
+    margin-top: 38px;
+}
+.cardbody3{
+    margin-top: 38px;
 }
 /*=========================fin contenedor de targetas======================== */
 /*=========================HEADER FELIX NUEVO======================== */
