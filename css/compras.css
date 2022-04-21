@@ -1,12 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Lobster&family=Open+Sans:wght@300&family=Roboto:ital,wght@1,300&family=Secular+One&family=Zilla+Slab:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100&family=Lobster&family=Open+Sans:wght@300&family=Secular+One&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
+/*====FIN CONFIGURACION TOTAL DE LA PAGINA===============*/
 
-
+/*==================VARIABLES CREADAS POR MARIA=============*/
 /*Definicion de variables */
 /*Para los subtitulos--trabajamos con h3*/
 
@@ -41,8 +40,9 @@
     --backgroundFooter: #B4789D;
     /*Variables para los enlaces */
 }
+/*==================FIN VARIABLES CREADAS POR MARIA=============*/
 
-/*====================navbar nuevo felix==================================*/
+/*====================NAVBAR GRUPO==================================*/
 .menu{
     background-color: var(--backgroundNav);
     font-family: var(--FonFamilyMenu);
@@ -95,7 +95,10 @@
     border: none;
 
 }
-/*=========================HEADER FELIX NUEVO======================== */
+/*========================FIN DEL NAVBAR======================*/
+
+
+/*=========================HEADER GRUPO======================== */
 .banerPrincipal img{
     height: auto;
     width: 100%;
@@ -111,76 +114,57 @@
     text-align: center;
     color: white;
 }
-
+/*=========================FIN DEL HEADER============================*/
 /*==TRABAJAR LO QUE TENEMOS QUE HACER SOLO EN EL MAIN======*/
-
-/*========CONTENEDOR MAIN ACORDEON DERECHA   E IMAGEN  IZQUIERDA======*/
-  
-.other{
-    display: flex;
-    flex-direction: row;
-    height: 500px;
-    overflow: hidden;
-    background-color: var(--BackgroundHeader)
-
+  /*======formulario de internet======*/
+  .credit-card-div  span { padding-top:10px; }
+.credit-card-div img { padding-top:30px; }
+.credit-card-div .small-font { font-size:9px; }
+.credit-card-div .pad-adjust { padding-top:10px; }
+/*=======formulario mis estilo=====*/
+#card{
+    height: 100px;
 }
-/*============CONTENEDOR DEL LADO DERECHO ESTRELLA Y NOMBRE EMPRESA===*/
-.lado{
+.mistyle{
     display: flex;
     flex-direction: column;
-    width: 30%;
-    background-color: transparent;
-    margin: auto;
+    height: 350px;
+    margin-top: 40px;
+}
+#cardfont span{
+    font-size: 16px;
+}
+#cardfont input{
+    font-size: 16px;
+}
+/*==========TITULO==========*/
+.enunciado1{
+    text-align: center;
+    background-color: var(--backgroundNav);
+    height: 80px;
+
+}
+.enunciado10{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 14px;
 }
 
 
-/*==================tamaño estrella y ubicacion============*/
-.estrella{
-    height: 180px;
-    width: 180px;
-    margin: auto;
-}
 
-/*==estilos nombre empresa y ubicacion================*/
-.name{
-    font-family: var(--FontFamilyH1);
-    margin: auto;
-    font-size: 35px;
-}
-.name1{
-    font-family: var(--FontFamilyH1);
-    margin: auto;
-    font-size: 25px;
-    padding-bottom: 20px;
-}
-/*==============CONTENEDOR LADO DERECHO ACORDEON BOOTSTRAP=======*/
-.acordeon{
-    width: 70%;
-    margin: auto;
-    
-}
 
 
 /*============FIN DEL MAIN======================*/
-/*=====LETRA DEL BOOTSTRAP TITULOS ACORDEON Y LETRA DEL SUBMENU=====*/
-.letraboot{
-    font-size: 18px;
-}
-strong{
-    font-size: 15PX;
-}
-ul{
-    font-size: 12PX;  
-}
-.fontin{
-    font-size: 12px;
-}
-#accordionFlushExample{
-    
-}
 
 
-/*====================TRABAJADO EN GRUPO===============================*/
+
+
+
+
+
+
+/*====================TRABAJADO EN GRUPO FOOTER===============================*/
 
 
 /* footer bootstrap*/
@@ -214,8 +198,5 @@ ul{
       margin-top: 10px;
 
   }
-  
-
-  
 
 
