@@ -150,9 +150,23 @@
 .name1{
     font-family: var(--FontFamilyH1);
     margin: auto;
-    font-size: 25px;
-    padding-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 8px;
+    
+    
 }
+.name2{
+    font-family: var(--FontFamilyH1);
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 12px;
+    color: var(--backgroundNav); 
+}
+.lado h3 a{
+    text-decoration:none;
+    color: var(--backgroundFooter);
+}
+
 /*==============CONTENEDOR LADO DERECHO ACORDEON BOOTSTRAP=======*/
 .acordeon{
     width: 70%;
@@ -175,9 +189,7 @@ ul{
 .fontin{
     font-size: 12px;
 }
-#accordionFlushExample{
-    
-}
+
 
 
 /*====================TRABAJADO EN GRUPO===============================*/
