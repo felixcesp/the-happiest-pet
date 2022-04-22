@@ -19,14 +19,42 @@
 .formRegistro input {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     padding: 0.9em 0.5em;
     background: #f2f2f2;
     border: 0;
     width: 75%;
     color: var(--secundario);
     font-size: 13px;
+    border-radius: 5px;
 }
+
+/* ..............validaciones............ */
+
+.formRegistro p {
+    visibility: hidden;
+    position: relative;
+    font-size: small;
+    font-weight: 500;
+    text-align: left;
+}
+.falla input{
+    border: 1px solid rgba(255, 0, 0, 0.397);
+    border-radius: 5px;
+
+}
+.falla p {
+    margin: 0 auto;
+    margin-bottom: 10px;
+    visibility: visible;
+    color:#e74c3c;
+}
+.formRegistro_ok{
+    border: 1px solid rgba(105, 223, 89, 0.397);
+    border-radius: 5px;
+}
+
+/* ...................................... */
 
 .botonRegistro {
     display: flex;
