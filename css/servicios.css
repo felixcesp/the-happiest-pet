@@ -1,16 +1,18 @@
-.SubtituloServicios{
+.SubtituloServicios {
     background-color: var(--backgroundNav);
-    color:white;
+    color: white;
     text-align: center;
     padding: 15px;
 }
-.wrapServicios{
+
+.wrapServicios {
     margin: 55px 0;
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.tarjetaServicios{
+
+.tarjetaServicios {
     height: 250px;
     width: 200px;
     margin-bottom: 25px;
@@ -19,20 +21,50 @@
     border-radius: 5px;
     box-shadow: 0 0 20px 0 #00000033, 0 5px 5px 0 #0000003d;
 }
-.tarjetaServicios img{
+
+.tarjetaServicios img {
     width: 100%;
 }
-.tarjetaServicios h2{
+
+.tarjetaServicios h2 {
     margin: 0 auto;
     padding: 15px;
     background-color: #ffffff;
     color: var(--backgroundNav);
 }
-.tarjetaServicios:hover{
-    -webkit-transform:scale(1.5);
-    transform:scale(1.25); 
+
+.tarjetaServicios:hover {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.25);
     transition: 400ms;
-    }
+}
+
 .tarjetaServicios {
-    overflow:hidden;
+    overflow: hidden;
+}
+
+.overlay {
+    position: fixed;
+    bottom: 1;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.overlay a{
+    color: white;
+    text-decoration: none;
+}
+.overlay a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.tarjetaServicios:hover .overlay {
+    opacity: 0.5;
 }
