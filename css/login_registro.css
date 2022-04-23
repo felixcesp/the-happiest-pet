@@ -19,7 +19,7 @@
 .formRegistro input {
     display: flex;
     margin: 0 auto;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     padding: 0.9em 0.5em;
     background: #f2f2f2;
     border: 0;
@@ -31,26 +31,29 @@
 
 /* ..............validaciones............ */
 
-.formRegistro p {
+.falla p {
     visibility: hidden;
     position: relative;
     font-size: small;
     font-weight: 500;
     text-align: left;
 }
-.falla input{
-    border: 1px solid rgba(255, 0, 0, 0.397);
+
+.falla input {
+    border: 2px solid rgba(255, 0, 0, 0.397);
     border-radius: 5px;
 
 }
+
 .falla p {
     margin: 0 auto;
     margin-bottom: 10px;
     visibility: visible;
-    color:#e74c3c;
+    color: #e74c3c;
 }
-.formRegistro_ok{
-    border: 1px solid rgba(105, 223, 89, 0.397);
+
+.formRegistro_ok input {
+    border: 2px solid rgba(105, 223, 89, 0.397);
     border-radius: 5px;
 }
 
@@ -72,15 +75,17 @@
 
 .botonRegistro:hover {
     box-shadow: 0 0 20px 0 #00000033, 0 5px 5px 0 #0000003d;
-    transition:all .5s ease-in-out;
-    font-size:20px;
+    transition: all .5s ease-in-out;
+    font-size: 20px;
     padding: 9.8px;
 }
+
 .botonRegistro:active {
     background-color: #3e8e41;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
+
 p {
     display: flex;
     justify-content: center;
@@ -118,31 +123,37 @@ p {
         width: 100%;
     }
 }
+
 @media (min-width:480px) {
     .formRegistro {
         width: 65%;
     }
 }
+
 @media (min-width:575px) {
     .formRegistro {
         width: 55%;
     }
 }
+
 @media (min-width:640px) {
     .formRegistro {
         width: 50%;
     }
 }
+
 @media (min-width:767px) {
     .formRegistro {
         width: 40%;
     }
 }
+
 @media (min-width:991px) {
     .formRegistro {
         width: 30%;
     }
 }
+
 /* ..............animacion formulario........... */
 
 .formRegistro>* {
