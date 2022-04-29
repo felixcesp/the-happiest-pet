@@ -1,0 +1,342 @@
+/*====CONFIGURACION TOTAL DE LA PAGINA===============*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{  
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    max-height: 1500px;
+
+
+}
+
+/*==================VARIABLES =============*/
+
+
+ :root {
+    --ColorFondoPrimaria: white;
+    --BackgroundHeader: #e8dcdc;
+    --FontH1: black;
+    --FontFamilyH1: 15px;
+    /*Color del fondo del nava*/
+    --backgroundNav: #B4789D;
+    /*Tipo de letra del menu */
+    --FonFamilyMenu: Arial;
+    /*Color de letra de los menus*/
+    --colorFontMenu: black;
+    /*Tamaño de letra de los menus*/
+    --fontSizeMenus: 18px;
+    /*Variables de la seccion principal, donde estan parrados, imagenes */
+    --BackGroundSeccionPrincipal: #eaddd0;
+    /*Color de letra para el h3 que son subtitulos de la seccion principal, Donde estan parrafos*/
+    --fontColorPrinciplaH3: black;
+    --fontFamilyH3: Arial;
+    --FontSizeH3: 15px
+    /*Variables para el manejo de parrafos */
+    --fontFamiliParrafo: Arial, Verdana;
+    --fontSizeParrafo: 12px;
+    /*Parametros para el fondo de mascotas para adoptar */
+    --backgroundAdoptar: white;
+    /*Color de fondo del aside */
+    --backgroupdAside: #eaddd0;
+    --fontSizeAside: 20px;
+    /*Variables de los parametros del footer */
+    --backgroundFooter: #B4789D;
+    /*Variables para los enlaces */
+}
+
+
+
+/*====================NAVBAR ==================================*/
+
+.menu {
+    background-color: var(--backgroundNav);
+    font-family: var(--FonFamilyMenu);
+}
+
+#editmenu {
+    color: antiquewhite;
+    background-color: inherit;
+}
+
+#editmenu:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu ul li a {
+    color: black;
+    font-family: var(--FonFamilyMenu);
+    font-size: 18px;
+}
+
+.menu ul li a:hover {
+    background-color: var(--backgroundNav);
+    color: aliceblue;
+}
+
+#regis {
+    position: absolute;
+    color: antiquewhite;
+    background-color: transparent;
+    height: 50px;
+    font-size: 17px;
+    right: 20px;
+    border: none;
+}
+
+#regis a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--FonFamilyMenu);
+}
+
+#regis1 a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--FonFamilyMenu);
+    background-color: transparent;
+}
+
+#regis1 {
+    position: absolute;
+    color: antiquewhite;
+    background-color: transparent;
+    height: 50px;
+    font-size: 17px;
+    right: 110px;
+    border: none;
+}
+
+
+/*========================FIN DEL NAVBAR======================*/
+
+
+/*=========================HEADER ======================== */
+
+.banerPrincipal img {
+    height: auto;
+    width: 100%;
+}
+
+.enunciado {
+    text-align: center;
+    background-color: var(--backgroundNav);
+    height: 60px;
+}
+
+.enunciado1{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    padding-top: 2PX;
+}
+
+
+/*=========================FIN DEL HEADER============================*/
+
+
+
+.container-contacto {
+    background: var(--BackgroundHeader);
+    width: 100%;
+    padding: 16px;
+    font-family: var(--FonFamilyMenu);
+    font-size: 16px;
+}
+
+.container-contacto h1 {
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.container-contacto h1 span {
+    font-size: 1em;
+    color: var(--backgroundFooter);
+}
+
+.contacto {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+}
+
+.contacto>* {
+    padding: 20px;
+}
+
+.contacto-formulario {
+    background: var(--BackgroundHeader);
+}
+
+.contacto-descripcion {
+  background: var(--backgroundNav);
+
+ 
+  
+}
+
+
+/*Propiedades del formulario*/
+
+.contacto-formulario form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contacto-formulario form .blokc {
+    grid-column: 1 / 3;
+}
+
+.contacto-formulario form p {
+    margin: 0;
+    padding: 16px;
+}
+
+.contacto-formulario form input,
+.contacto-formulario form select,
+.contacto-formulario form textarea {
+    width: 100%;
+    padding: 5px;
+    border: none;
+    background: none;
+    border-bottom: 1px solid #9c98ca;
+    border-right: 1px solid var(--backgroundNav);
+    outline: 0;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.contacto-formulario form .botones {
+    background: #9c98ca;
+    border: 0;
+    text-transform: uppercase;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.contacto-formulario form .botones:hover,
+.contacto-formulario form .botones:focus {
+    color: #fff;
+    background: var(--backgroundNav);
+    transition: background-color 1s ease-out;
+    outline: 0;
+    font-weight: bold;
+    transition: 0.7s;
+}
+.iconos{
+    width: 19px;
+   margin-right: 10px; 
+   margin-bottom: 2px;  
+}
+.iconos2{
+    width: 24px;
+   margin-right: 8px;
+   margin-bottom: 4px;   
+}
+.iconos3{
+    width: 18px;
+   margin-right: 14px;
+   margin-bottom: 4px;   
+}
+
+
+
+
+/*El div de contacto informacion*/
+
+.contacto-descripcion {
+    /*background: var(--backgroundNav);*/
+    background-color: rgb(162.81.170);
+    width: 100%;
+    margin: 0;
+    border-radius: 4px;
+    color: #fff;
+}
+
+.contacto-descripcion h4,
+.contacto-descripcion p,
+.contacto-descripcion ul {
+    text-align: center;
+    margin: 0 0 16px 0;
+    padding: 0;
+}
+
+.contacto-descripcion ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contacto-descripcion ul li {
+    padding: 5px;
+}
+
+
+/* de acurdo al tamaño de las pantallas*/
+
+@media(min-width: 700px) {
+    .contacto {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contacto>* {
+        padding: 2em;
+    }
+    .contacto-descripcion h4,
+    .contacto-descripcion p,
+    .contacto-descripcion ul {
+        padding: 16px;
+        text-align: justify;
+    }
+}
+
+
+
+/*====================FOOTER===============================*/
+
+
+/* footer bootstrap*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    background: #d6dee0;
+    padding: 10px 0;
+    border: outset 0.1px white;
+    z-index: -1;
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    transition: all .5s ease;
+}
+
+.footer a:first-child {
+    border-left: 1px solid #70726F;
+}
+
+.footer a:hover {
+    color: white;
+    background-color: rgba(30, 13, 159, 0.335);
+}
+
+.right {
+    margin-left: 10px;
+    margin-top: 10px;
+}

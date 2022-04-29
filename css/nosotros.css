@@ -1,0 +1,422 @@
+/*====CONFIGURACION TOTAL DE LA PAGINA===============*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{  
+    box-sizing: border-box;
+    margin: auto;
+    padding: 0%;
+    height: 100%;
+    width: 100%;
+    max-width: 1500px;
+    max-height: 1500px;
+
+
+}
+
+/*====FIN CONFIGURACION TOTAL DE LA PAGINA===============*/
+
+
+/*==================VARIABLES=============*/
+
+
+/*Definicion de variables */
+
+
+/*Para los subtitulos--trabajamos con h3*/
+
+ :root {
+    --ColorFondoPrimaria: white;
+    --BackgroundHeader: #e8dcdc;
+    --FontH1: black;
+    --FontFamilyH1: 15px;
+    /*Color del fondo del nava*/
+    --backgroundNav: #B4789D;
+    /*Tipo de letra del menu */
+    --FonFamilyMenu: Arial;
+    /*Color de letra de los menus*/
+    --colorFontMenu: black;
+    /*Tamaño de letra de los menus*/
+    --fontSizeMenus: 18px;
+    /*Variables de la seccion principal, donde estan parrados, imagenes */
+    --BackGroundSeccionPrincipal: #eaddd0;
+    /*Color de letra para el h3 que son subtitulos de la seccion principal, Donde estan parrafos*/
+    --fontColorPrinciplaH3: black;
+    --fontFamilyH3: Arial;
+    --FontSizeH3: 15px
+    /*Variables para el manejo de parrafos */
+    --fontFamiliParrafo: Arial, Verdana;
+    --fontSizeParrafo: 12px;
+    /*Parametros para el fondo de mascotas para adoptar */
+    --backgroundAdoptar: white;
+    /*Color de fondo del aside */
+    --backgroupdAside: #eaddd0;
+    --fontSizeAside: 20px;
+    /*Variables de los parametros del footer */
+    --backgroundFooter: #B4789D;
+    /*Variables para los enlaces */
+}
+
+
+/*==================FIN VARIABLES =============*/
+
+
+/*====================NAVBAR ==================================*/
+
+.menu {
+    background-color: var(--backgroundNav);
+    font-family: var(--FonFamilyMenu);
+}
+
+#editmenu {
+    color: antiquewhite;
+    background-color: inherit;
+}
+
+#editmenu:hover {
+    background-color: white;
+    color: black;
+}
+
+.menu ul li a {
+    color: black;
+    font-family: var(--FonFamilyMenu);
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: var(--backgroundNav);
+    color: aliceblue;
+}
+
+#regis {
+    position: absolute;
+    color: antiquewhite;
+    background-color: transparent;
+    height: 50px;
+    font-size: 17px;
+    right: 20px;
+    border: none;
+}
+
+#regis a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--FonFamilyMenu);
+}
+
+#regis1 a {
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: var(--FonFamilyMenu);
+    background-color: transparent;
+}
+
+#regis1 {
+    position: absolute;
+    color: antiquewhite;
+    background-color: transparent;
+    height: 50px;
+    font-size: 17px;
+    right: 110px;
+    border: none;
+}
+
+
+/*========================FIN DEL NAVBAR======================*/
+
+
+/*=========================HEADER ======================== */
+
+.banerPrincipal img {
+    height: auto;
+    width: 100%;
+}
+
+.enunciado {
+    text-align: center;
+    background-color: var(--backgroundNav);
+    height: 60px;
+}
+
+.enunciado1 {
+    font-size:40px;
+    text-align: center;
+    color: white;
+    padding-top: 4PX;
+}
+
+
+/*=========================FIN DEL HEADER============================*/
+
+
+
+.nosotros {
+    display: grid;
+    height: 100%;
+    background: var(--BackgroundHeader);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    grid-template-columns: [nosotros-contenido-start] 1fr [nosotros-contenido-end imagenes-start] 1fr [imagenes-end];
+    grid-template-rows: [contenido-start] 3.5fr [contenido-end nsedes-start] 1fr [nsedes-end];
+    margin: 1x;
+    padding: 5px;
+   
+}
+
+
+/*CSS CONTENIDO  */
+
+.nosotros .nosotros-contenido {
+    grid-column: nosotros-contenido-start / imagenes-start;
+    grid-row: contenido-start / nsedes-start;
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: [quinsomos-start] 1fr [quinsomos-end];
+    grid-template-rows: [nosotros-somos-star] auto [nosotros-somos-end especialidades-start] auto [especialidades-end];
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.nosotros-contenido .nosotros-descripcion {
+    grid-column: quinsomos-start / quinsomos-end;
+    grid-row: nosotros-somos-star / especialidades-start;
+    display: grid;
+    grid-template-columns: [descripcion-parrafo-start] 1fr [descripcion-parrafo-end];
+    grid-template-rows: [descripcion-h2-start] auto [descripcion-h2-end descripcion-p-start] auto [descripcion-p-end];
+    grid-gap: 10px;
+}
+
+.nosotros-contenido .nosotros-descripcion h2 {
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.nosotros-contenido .nosotros-descripcion .descripcion-parrafo {
+    grid-column: descripcion-parrafo-start / descripcion-parrafo-end;
+    margin-left: 24px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* titulos izquierda*/
+.quienes{
+    margin-top: 100px;
+}
+
+
+/*Especialidades*/
+
+.nosotros-contenido .nosotros-especialidades {
+    grid-column: quinsomos-start / quinsomos-end;
+    grid-row: nosotros-somos-end / especialidades-end;
+    display: grid;
+    grid-template-columns: [especialidades-parrafo-start] 1fr [especialidades-parrafo-end];
+    grid-template-rows: [especialidades-h2-start] auto [especialidades-h2-end especialidades-p-start] auto [especialidades-p-end];
+    grid-gap: 10px;
+}
+
+
+/*Cuadra las dos grillas de especializacion */
+
+.nosotros-contenido .nosotros-especialidades h2 {
+    text-align: center;
+    margin-top: 16px;
+    padding: 8px;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    grid-column: especialidades-parrafo-start / especialidades-parrafo-end;
+    display: block;
+}
+
+.nosotros-contenido .nosotros-especialidades .especialidades-parrafo {
+    grid-column: especialidades-parrafo-start / especialidades-parrafo-end;
+    margin-left: 24px;
+    padding: 5px;
+    text-align: justify;
+    line-height: 1.5em;
+}
+
+
+/*  IMAGENES */
+
+.nosotros .contenedor-imagenes {
+    grid-column: imagenes-start / imagenes-end;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin-left: 90px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nosotros .contenedor-imagenes .imagen1 {
+    width: 88%;
+    margin: auto;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    /*background: #fff;*/
+   /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    max-height: 270px;*/
+    background-color: inherit;
+}
+.imgedit{
+    margin: auto;
+    
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+    /*background: #fff;*/
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    max-height: 300px;
+    background-color: inherit;
+    
+}
+
+.imgedit:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(3%);
+    transition: all 400ms ease;
+}
+
+.nosotros .contenedor-imagenes img {
+    width: 90%;
+    display: block;
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px;
+}
+
+
+/*  Hasta aca imagenes */
+
+
+/*CSS DE LAS SEDES  */
+
+.nsedes {
+    grid-column: nosotros-contenido-start / imagenes-end;
+    grid-row: contenido-end / nsedes-end;
+    width: 100%;
+    display: grid;
+    grid-template-rows: [nsedes-fila-h2-start] auto [nsedes-fila-h2-end subsedes-start] auto [subsedes-end];
+    background: var(--backgroundFooter);
+    height: 300px;
+    margin-top: 0px;
+    color: #fff;
+    
+}
+
+.nsedes .contenedor-sedes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+   /* grid-row: subsedes-start / subsedes-end;*/
+    margin-bottom: 10px;
+}
+
+.nsedes h2 {
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+    text-align: center;
+    grid-row: nsedes-fila-h2-start / nsedes-fila-h2-end;
+    padding: 25px;
+}
+
+.nsedes .sede-1 {
+    margin: 5px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    margin-right: 30px;
+    padding: 10px;
+   width: 250px;
+    text-align: center;
+}
+
+.sede-1:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(3%);
+}
+
+.nsedes .sede-1 h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nsedes .sede-1 h3 {
+    font-size: 14px;
+    padding: 10px;
+}
+
+
+
+
+/*====================FOOTER===============================*/
+
+
+/* footer bootstrap*/
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 18%;
+    background: #d6dee0;
+    padding: 10px 0;
+    border: outset 0.1px white;
+    z-index: -1;
+}
+
+.footer a {
+    color: #70726F;
+    font-size: 20px;
+    padding: 10px;
+    border-right: 1px solid #70726F;
+    transition: all .5s ease;
+}
+
+.footer a:first-child {
+    border-left: 1px solid #70726F;
+}
+
+.footer a:hover {
+    color: white;
+    background-color: rgba(30, 13, 159, 0.335);
+}
+
+.right {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
