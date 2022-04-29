@@ -110,7 +110,8 @@ p {
 
 /* ......Footer........... */
 
-.footerLogin {
+.footerLogin,
+.footerRegistro {
     position: absolute;
     bottom: 0;
     width: 100%;
